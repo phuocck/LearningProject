@@ -12,7 +12,33 @@ app.use(express.static(path.join(__dirname,'Views')));
 
 //#region api
 app.get('/customer',(req,res)=>{
-    res.send("customer controller");
+    let listCustomer = [
+        {
+            CustomerID: "1",
+            CustomerName : "ncphuoc",
+            CustomerCode: "P001",
+            Phone : "0353082430"
+        },
+        {
+            CustomerID: "2",
+            CustomerName : "ncphuoc",
+            CustomerCode: "P001",
+            Phone : "0353082430"
+        },
+        {
+            CustomerID: "3",
+            CustomerName : "ncphuoc",
+            CustomerCode: "P001",
+            Phone : "0353082430"
+        },
+        {
+            CustomerID: "4",
+            CustomerName : "ncphuoc",
+            CustomerCode: "P001",
+            Phone : "0353082430"
+        }
+    ];
+    res.send(listCustomer);
 });
 app.get('/employee',(req,res)=>{
     res.send("employee controller")

@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/scripts/library/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/scripts/library/bootstrap-table/dist/bootstrap-table.min.css" rel="stylesheet">
+
     <title>Document</title>
 </head>
+
 <body>
-    <div class="row">
-        <input type="text" class="">
+    <div class="container">
+        <div class="container-fluid">
+            <h1>Test bootstrap table</h1>
+            <div class="row">
+                <table id="tblData" data-control-type="grid-panel" data-id="CustomerID" data-toggle="table"
+                    data-url="http://localhost:3000/customer">
+                    <thead>
+                        <tr>
+                            <th data-field="CustomerID">Mã</th>
+                            <th data-field="CustomerName">Tên</th>
+                            <th data-field="CustomerCode">Mã code</th>
+                            <th data-field="Phone">Số ĐT</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
     </div>
+    <script src="/scripts/library/bootstrap-table/dist/bootstrap-table.js"></script>
 </body>
+
 </html>

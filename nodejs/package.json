@@ -4,12 +4,13 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "main.js"
+    "start": "node main.js"
   },
   "author": "ncphuoc",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "bootstrap-table": "^1.16.0",
     "express": "^4.17.1",
     "jquery": "^3.5.0"
   }
